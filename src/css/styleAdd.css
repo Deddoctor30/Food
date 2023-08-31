@@ -1,0 +1,50 @@
+.show {
+   display: block;
+}
+
+.hide {
+   display: none;
+}
+
+.fade {
+   animation: fade;
+   animation-duration: 1.5s;
+}
+
+@keyframes fade{
+   from{
+      opacity: 0.1;
+   }  to
+   {
+      opacity: 1;
+   }
+}
+
+.dots-container {
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   top: 94%;
+   left: 50%;
+   transform: translateX(-50%);
+   /* min-width: 200px; */
+   gap: 20px;
+}
+
+.dots {
+   height: 12px;
+   width: 35px;
+   background-color: rgb(255, 255, 255);
+   z-index: 15;
+   opacity: 0.4;
+   cursor: pointer;
+}
+
+.active-dot {
+   opacity: 0.9;
+   background-color: rgb(255, 255, 255);
+}
+
+.offer__slider {
+   position: relative;
+}
